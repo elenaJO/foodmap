@@ -1,0 +1,29 @@
+*{
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+  /* pagina principal */
+.container-img{
+  height: 100vh;
+  background: linear-gradient( #F8A05A 65%, #E69884) ;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+  
+.title-index{
+  font-family: 'Bungee', cursive;
+  font-size: 65px;    
+}
+
+.fa-cutlery{
+  font-size: 60px;
+  color: #227DA7;
+}
+
+.center{
+  text-align: center;
+}
