@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  console.log(array);   
+  $('#title-restaurant').text(localStorage.distrito);   
 });

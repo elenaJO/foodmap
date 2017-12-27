@@ -1,8 +1,11 @@
 $(document).ready(function() {
   $('#search').click(function() {
-    var es = $('#list-restaurant').val();
-    console.log(es);
-    $('#seleccionado').text(es);
+    if ($('#list-restaurant').val()) {
+      localStorage.distrito = $('#list-restaurant').val();
+      window.location.href = 'chosen.html';
+    } else {
+      alert('Ingrese Distrito');
+    }
   });
 });
 
@@ -59,6 +62,6 @@ function initMap() {
   }
 
   // Autocompletamos las direcciones de Inicio y fin
-  var puntos = document.getElementById('list-restaurant');
-  new google.maps.places.Autocomplete(puntos);
+  // var puntos = document.getElementById('list-restaurant');
+  // new google.maps.places.Autocomplete(puntos);
 }
