@@ -1,6 +1,7 @@
+var gg = 'gggg';
 var data = {
   'Miraflores': {
-    'Alto-peru': {
+    'Alto Peru': {
       'platos': [
         {
           'nombre': 'Olluquito',
@@ -17,7 +18,7 @@ var data = {
       ]
 
     },
-    'Asia-lima': {
+    'Asia Lima': {
       'platos': [
         {
           'nombre': 'Arroz con pollo',
@@ -72,7 +73,7 @@ var data = {
     }
   },
   'Comas': {
-    'Nortenita': {
+    'Conquistador': {
       'platos': [
         {
           'nombre': 'Ceviche',

@@ -1,10 +1,11 @@
 $(document).ready(function() {
   $('#search').click(function() {
-    if ($('#list-restaurant').val()) {
+    if ($('#list-restaurant').val().toUpperCase() === 'MIRAFLORES' || $('#list-restaurant').val().toUpperCase() === 'LINCE' || $('#list-restaurant').val().toUpperCase() === 'COMAS') {
       localStorage.distrito = $('#list-restaurant').val();
       window.location.href = 'chosen.html';
     } else {
-      alert('Ingrese Distrito');
+      $('#list-restaurant').val('');
+      alert('Ingrese uno de los distritos: Miraflores, Lince o Comas');
     }
   });
 });

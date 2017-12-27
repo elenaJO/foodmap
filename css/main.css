@@ -67,3 +67,35 @@
 .none{
   display: none;
 }
+
+/* estilos ventana chosen */
+.container-res{
+  height: 180px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #FFDA22 ;
+  font-weight: 900;
+}
+
+.p-dist{
+  background: #0F9AEF ;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.img-1{
+  background-image: url(../assets/images/restaurant1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.img-2{
+  background-image: url(../assets/images/restaurant2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
