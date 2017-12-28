@@ -26,6 +26,12 @@ $(document).ready(function() {
     $('.name-plate').remove();
   }
 
+  function modal(num) {
+    $('#name-restaurant').text(localStorage.restaurant);
+    $('#name-plate').text('Pedido : ' + arrayNamePlate[num]);
+    $('#plate-cost').text('Precio : ' + arrayCost[num] + ' nuevos soles');
+  }
+
   $('#container-plates > div:nth-child(2)').mouseenter(function(event) {
     mouseenterImage(1);
   });
@@ -51,8 +57,22 @@ $(document).ready(function() {
   });
 
   $('#container-plates > div:first').click(function() {
-    $('#name-restaurant').text(localStorage.restaurant);
-    $('#name-plate').text('Pedido : ' + arrayNamePlate[0]);
-    $('#plate-cost').text('Precio: ' + arrayCost[0] + ' nuevos soles');
+    modal(0);
+  });
+
+  $('#container-plates > div:nth-child(2)').click(function() {
+    modal(1);
+  });
+
+  $('#container-plates > div:nth-child(3)').click(function() {
+    modal(2);
+  });
+
+  $('.close').click(function() {
+    window.location.href = 'restaurant.html';
+  });
+
+  $('#container-plates > div:nth-child(3)').bind('touchstart', function() {
+    console.log('jjj');
   });
 });

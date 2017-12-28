@@ -206,3 +206,30 @@
 .text-align{
   text-align: center;
 }
+
+.italic{
+  font-weight: 600;
+  font-style: italic;
+  color: #23C0A4 ;
+}
+
+.style-title{
+  color: #2DA6CB;
+  font-weight: 500;
+}
+
+.p-bold{
+  font-weight: 500;
+  font-size: 16px;
+  color:#647759 ;
+}
+
+.button-now{
+  margin-top: 20px;
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  background-color: #F9A51B;
+  color: #000;
+  font-weight: 500;
+}
