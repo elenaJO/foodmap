@@ -187,3 +187,17 @@
   background-image: url(../assets/images/tacacho.jpeg);
 }
 
+.red{
+  filter: grayscale(70%);
+}
+
+/* estilos para los nombres de los platos */
+.name-plate{
+  text-align: center;
+  color:white;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  padding-top: 20px;
+}
