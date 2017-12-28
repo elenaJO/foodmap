@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('#title-restaurant').text(localStorage.restaurant);
-  var arrayNamePlate = [];
+  var arrayNamePlate = []; // arrays donde se almacenaran los nombres,codigos y precios de los platos
   var arrayCodPlate = [];
   var arrayCost = [];
   for (var i = 0; i <= 2; i++) {
@@ -8,7 +8,7 @@ $(document).ready(function() {
     arrayNamePlate[i] = data[localStorage.distrito.toUpperCase()][localStorage.restaurant]['platos'][i]['nombre'];
     arrayCodPlate[i] = codigoPlate;
     arrayCost[i] = data[localStorage.distrito.toUpperCase()][localStorage.restaurant]['platos'][i]['precio'];
-    arrayCodPlate[i] = codigoPlate;
+    // por cada plato se creara un div con id,class y se enlazara a un modal
     var appendPlate1 = '<div id="_cod_" class="_nombre_ images-plates" data-toggle="modal" data-target="#plate-option"></div>';
     var appendReplace = appendPlate1.replace('_nombre_', codigoPlate).replace('_cod_', codigoPlate);
     $('#container-plates').append(appendReplace);
@@ -32,6 +32,7 @@ $(document).ready(function() {
     $('#plate-cost').text('Precio : ' + arrayCost[num] + ' nuevos soles');
   }
 
+  // eventos de mouseenter, mouseleave y click para cada plato
   $('#container-plates > div:nth-child(2)').mouseenter(function(event) {
     mouseenterImage(1);
   });
@@ -70,9 +71,5 @@ $(document).ready(function() {
 
   $('.close').click(function() {
     window.location.href = 'restaurant.html';
-  });
-
-  $('#container-plates > div:nth-child(3)').bind('touchstart', function() {
-    console.log('jjj');
   });
 });
