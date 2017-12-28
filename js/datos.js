@@ -1,4 +1,3 @@
-var gg = 'gggg';
 var data = {
   'MIRAFLORES': {
     'Alto Peru': {

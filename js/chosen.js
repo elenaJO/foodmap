@@ -33,5 +33,4 @@ $(document).ready(function() {
     localStorage.restaurant = $('#restaurant2-dist').text();
     window.location.href = 'plate.html';
   });
-
 });
