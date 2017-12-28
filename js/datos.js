@@ -89,15 +89,18 @@ var data = {
       'platos': [
         {
           'nombre': 'Ceviche',
-          'precio': '15'
+          'precio': '15',
+          'codigo': 'Conquis-ceviche'
         },
         {
           'nombre': 'Anticucho',
-          'precio': '16'
+          'precio': '16',
+          'codigo': 'Conquis-anticucho'
         },
         {
           'nombre': 'Papa la Huacaina',
-          'precio': '18'
+          'precio': '18',
+          'codigo': 'Conquis-papa'
         }
       ]
 

@@ -5,8 +5,9 @@
   box-sizing: border-box;
 }
  
-center{
+.center{
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
   /* pagina principal */
@@ -110,37 +111,79 @@ center{
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  margin-left: 30px;
 }
 
 .Alt-olluquito{
   background-image: url(../assets/images/olluquito.png);
-  /* height: 140px;
-  width: 80%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  margin-bottom: 10px; */
 }
 
 .Alt-lomo{
   background-image: url(../assets/images/lomo.png);
-  /* height: 140px;
-  width: 80%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  margin-bottom: 10px; */
 }
 
 .Alt-aji{
   background-image: url(../assets/images/aji.png);
-  /* height: 140px;
-  width: 80%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  margin-bottom: 10px; */
 }
 
+.Asia-arroz{
+  background-image: url(../assets/images/arroz-pollo.jpeg);
+}
+
+.Asia-carapulcra{
+  background-image: url(../assets/images/carapulcra.jpeg);
+}
+
+.Asia-tacu{
+  background-image: url(../assets/images/tacu.png);
+}
+
+.Chimbotano-pachamanca{
+  background-image: url(../assets/images/pachamanca.png);
+}
+
+.Chimbotano-seco{
+  background-image: url(../assets/images/seco.png);
+}
+
+.Chimbotano-rocoto{
+  background-image: url(../assets/images/rocoto-relleno.png);
+}
+
+.Katori-chupe{
+  background-image: url(../assets/images/chupe.png);
+}
+
+.Katori-pollo{
+  background-image: url(../assets/images/pollo-brsa.png);
+}
+
+.Katori-causa{
+  background-image: url(../assets/images/causa.png);
+}
+
+.Conquis-ceviche{
+  background-image: url(../assets/images/ceviche.png);
+}
+
+.Conquis-anticucho{
+  background-image: url(../assets/images/anticucho.png);
+}
+
+.Conquis-papa{
+  background-image: url(../assets/images/papa-huanca.png);
+}
+
+.Mochica-cuy{
+  background-image: url(../assets/images/cuy.png);
+}
+
+.Mochica-cau{
+  background-image: url(../assets/images/cau-cau.png);
+}
+
+.Mochica-tacacho{
+  background-image: url(../assets/images/tacacho.jpeg);
+}
 
