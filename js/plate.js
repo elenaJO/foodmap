@@ -2,11 +2,14 @@ $(document).ready(function() {
   $('#title-restaurant').text(localStorage.restaurant);
   var arrayNamePlate = [];
   var arrayCodPlate = [];
+  var arrayCost = [];
   for (var i = 0; i <= 2; i++) {
     var codigoPlate = data[localStorage.distrito.toUpperCase()][localStorage.restaurant]['platos'][i]['codigo'];
     arrayNamePlate[i] = data[localStorage.distrito.toUpperCase()][localStorage.restaurant]['platos'][i]['nombre'];
     arrayCodPlate[i] = codigoPlate;
-    var appendPlate1 = '<div id="_cod_" class="_nombre_ images-plates"></div>';
+    arrayCost[i] = data[localStorage.distrito.toUpperCase()][localStorage.restaurant]['platos'][i]['precio'];
+    arrayCodPlate[i] = codigoPlate;
+    var appendPlate1 = '<div id="_cod_" class="_nombre_ images-plates" data-toggle="modal" data-target="#plate-option"></div>';
     var appendReplace = appendPlate1.replace('_nombre_', codigoPlate).replace('_cod_', codigoPlate);
     $('#container-plates').append(appendReplace);
   }
@@ -45,5 +48,11 @@ $(document).ready(function() {
 
   $('#container-plates > div:first'). mouseleave(function() {
     mouseleaveImage(0);
+  });
+
+  $('#container-plates > div:first').click(function() {
+    $('#name-restaurant').text(localStorage.restaurant);
+    $('#name-plate').text('Pedido : ' + arrayNamePlate[0]);
+    $('#plate-cost').text('Precio: ' + arrayCost[0] + ' nuevos soles');
   });
 });
