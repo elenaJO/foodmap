@@ -4,7 +4,11 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+ 
+center{
+  display: flex;
+  justify-content: center;
+}
   /* pagina principal */
 .container-img{
   height: 100vh;
@@ -99,3 +103,44 @@
   background-position: center center;
   background-size: cover;
 }
+
+.images-plates{
+  height: 140px;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.Alt-olluquito{
+  background-image: url(../assets/images/olluquito.png);
+  /* height: 140px;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  margin-bottom: 10px; */
+}
+
+.Alt-lomo{
+  background-image: url(../assets/images/lomo.png);
+  /* height: 140px;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  margin-bottom: 10px; */
+}
+
+.Alt-aji{
+  background-image: url(../assets/images/aji.png);
+  /* height: 140px;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  margin-bottom: 10px; */
+}
+
+

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#title-restaurant').text(localStorage.distrito.toUpperCase());
+  $('#title-distrito').text(localStorage.distrito.toUpperCase());
   var selectRestaurant = localStorage.distrito.toUpperCase();
   var restaurant1;
   var restaurant2;
@@ -11,23 +11,27 @@ $(document).ready(function() {
   }
 
   if (selectRestaurant === 'MIRAFLORES') {
-    restaurantDist('Miraflores');
+    restaurantDist('MIRAFLORES');
   }
   
   if (selectRestaurant === 'COMAS') {
-    restaurantDist('Comas');
+    restaurantDist('COMAS');
   } 
 
   if (selectRestaurant === 'LINCE') {
-    restaurantDist('Lince');
+    restaurantDist('LINCE');
   }
   
   $('#select-one').click(function() {
     console.log($('#restaurant1-dist').text());
+    localStorage.restaurant = $('#restaurant1-dist').text();
+    window.location.href = 'plate.html';
   });
 
   $('#select-two').click(function() {
+    localStorage.restaurant = $('#restaurant2-dist').text();
     console.log($('#restaurant2-dist').text());
+    window.location.href = 'plate.html';
   });
 
 });
